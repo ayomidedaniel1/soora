@@ -6,7 +6,6 @@ import {
   Text,
   View,
   StatusBar,
-  TouchableWithoutFeedback,
 } from 'react-native';
 
 import {
@@ -117,6 +116,27 @@ export default function App () {
           textTransform: 'capitalize',
           paddingHorizontal: 40,
         }}>Get Notified When we Launch</Text>
+
+        <View style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          backgroundColor: '#0B0B0B',
+          paddingHorizontal: 14,
+          paddingVertical: 10,
+          borderRadius: 4,
+          width: 97.07,
+          height: 32,
+        }}>
+          <Text style={{
+            fontFamily: 'Inter_700Bold',
+            fontSize: 10,
+            lineHeight: 12,
+            color: '#fff',
+            // paddingRight: 8,
+          }}>Contact Us</Text>
+          <Image source={require('./assets/images/contact.png')} resizeMode='cover' style={{ width: 10, height: 8, }} />
+        </View>
 
         <Text style={{
           color: '#0B0B0B',
